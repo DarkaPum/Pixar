@@ -1,0 +1,364 @@
+
+/* Configuración general para pantallas hasta 320px de ancho como máximo (Mobile S). */
+/* --------------------------------------------------------------------------------- */
+
+/* FUENTES */
+/* ------- */
+@font-face {
+	font-family: "DarkerGrotesque-Black";
+	src: url("fonts/DarkerGrotesque-Black.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-Bold";
+	src: url("fonts/DarkerGrotesque-Bold.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-ExtraBold";
+	src: url("fonts/DarkerGrotesque-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-Light";
+	src: url("fonts/DarkerGrotesque-Light.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-Medium";
+	src: url("fonts/DarkerGrotesque-Medium.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-Regular";
+	src: url("fonts/DarkerGrotesque-Regular.ttf");
+}
+@font-face {
+	font-family: "DarkerGrotesque-SemiBold";
+	src: url("fonts/DarkerGrotesque-SemiBold.ttf");
+}
+
+/* CONFIGURACION del BODY */
+/* =========================================== */
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: absolute;
+
+	background: #f6f6f6;
+	font-family: DarkerGrotesque-SemiBold;
+
+	width: 100vw;
+	max-width: 100vw;
+}
+
+/* CONFIGURACION del HEADER */
+/* =========================================== */
+header {
+	width: 100vw;
+	max-width: 100vw;
+}
+
+#navUl {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	list-style: none;
+
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* CONFIGURACION del LOGO de PIXAR */
+/* ------------------------------------------- */
+#pixarLi {
+	display: flex;
+	position: relative;
+	top: 0px;
+	left: 100px;
+
+	width: 200px;
+	height: 100px;
+}
+
+#pixarLogo, #pixarLogo > figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+#pixarLogo > figure > img {
+	width: 70%;
+	height: 70%;
+}
+
+/* CONFIGURACION de las OPCIONES del HEADER */
+/* ------------------------------------------- */
+#menuLi {
+	display: flex;
+	position: relative;
+	top: 0px;
+	right: 175px;
+
+	width: 750px;
+	height: 100px;
+}
+
+#navMenu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+
+	list-style: none;
+	font-size: 21px;
+
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+}
+
+/* CONFIGURACION de los SECTIONS */
+/* =========================================== */
+
+/* CONFIGURACION del FRONT PAGE SECTION */
+/* ------------------------------------------- */
+#frontPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 60%;
+}
+
+#frontPage > div, #frontPage > div > a , #frontPageFigure{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#frontPageImg {
+	width: 100%;
+	height: 100%;
+}
+
+/* CONFIGURACION de los SECTIONS INFERIORES */
+/* ------------------------------------------- */
+#downSections {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 150px;
+
+	width: 85%;
+	height: 350px;
+}
+
+.sectionLinks, .sectionLinks > div {
+	width: 100%;
+	height: 100%;
+}
+
+.sectionDivImg {
+	width: 100%;
+	height: 75%;
+}
+
+.sectionDivImg > a, .sectionsFigure {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.sectionsImg {
+	width: 90%;
+	height: 100%;
+}
+
+.sectionDivP {
+	display: flex;
+	justify-content: center;
+
+	margin: 0px;
+	margin-top: 40px;
+}
+
+.sectionDivP > p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 19px;
+	letter-spacing: 3px;
+
+	width: 90%;
+	height: 100%;
+	margin: 0px;
+}
+
+/* CONFIGURACION del FOOTER */
+/* =========================================== */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 250px;
+
+	width: 100%;
+	height: 300px;
+}
+
+#footerOptions {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+#socialNetworks {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 150px;
+	height: 30px;
+}
+
+#socialNetworks > span {
+	font-size: 23px;
+}
+
+#footerLinks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	list-style: none;
+	font-size: 20px;
+
+	width: 610px;
+	height: 130px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 50px;
+}
+
+.footerOptionsLinks {
+	border-right: 2px solid rgb(200, 200, 200);
+	
+	padding: 10px;
+}
+
+.footerOptionsLinks:last-child {
+	border: none;
+}
+
+.footerOptionsLinks > a {
+	color: grey;
+	text-decoration: none ;
+	border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+#copyright {
+	font-size: 19px;
+	letter-spacing: 3px;
+}
+
+.copyright > p {
+	color: grey;
+}
+
+
+
+
+
+/* CODIGOS alfanuméricos para los ICONOS de FACEBOOK, TWITTER, YOUTUBE, INSTAGRAM */
+/*--------------------------------------------------------------------------------*/
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+/* CODIGOS alfanuméricos para el ICONO de COPYRIGHT                               */
+/*--------------------------------------------------------------------------------*/
+.icon-copyright:before {
+    content: "\e90e";
+}
+
+/* Configuración específica para pantallas hasta 375px de ancho como máximo (Mobile M). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 375px){
+
+}
+
+/* Configuración específica para pantallas hasta 425px de ancho como máximo (Mobile L). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 425px){
+
+}
+
+/* Configuración específica para pantallas hasta 768px de ancho como máximo (Tablet). */
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+
+}
+
+/* Configuración específica para pantallas hasta 1024px de ancho como máximo (Laptop). */
+/*-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px){
+
+}
+
+/* Configuración específica para pantallas hasta 1440px de ancho como máximo (Laptop L). */
+/*---------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1440px){
+
+}
+
+/* Configuración específica para pantallas hasta 1680px de ancho como máximo (Desktop). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1680px){
+
+}
+
+/* Configuración específica para pantallas hasta 1920px de ancho como máximo (Desktop). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1920px){
+
+}
+
+/* Configuración específica para pantallas hasta 2560px de ancho como máximo (4K). */
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width: 2560px){
+
+}
