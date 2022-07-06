@@ -45,17 +45,17 @@ body {
 	font-family: DarkerGrotesque-SemiBold;
 
 	width: 100vw;
-	max-width: 100vw;
+	max-width: 100%;
 }
 
 /* CONFIGURACION del HEADER */
 /* =========================================== */
 header {
-	width: 100vw;
+	width: 100%;
 	max-width: 100vw;
 }
 
-#navUl {
+.nav__Ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -71,7 +71,7 @@ header {
 
 /* CONFIGURACION del LOGO de PIXAR */
 /* ------------------------------------------- */
-#pixarLi {
+.nav__Li:first-child {
 	display: flex;
 	position: relative;
 	top: 0px;
@@ -81,7 +81,7 @@ header {
 	height: 100px;
 }
 
-#pixarLogo, #pixarLogo > figure {
+.nav__Logo, .nav__Figure {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -91,14 +91,14 @@ header {
 	margin: 0px;
 }
 
-#pixarLogo > figure > img {
+.nav__Img {
 	width: 70%;
 	height: 70%;
 }
 
 /* CONFIGURACION de las OPCIONES del HEADER */
 /* ------------------------------------------- */
-#menuLi {
+.nav__Li:last-child {
 	display: flex;
 	position: relative;
 	top: 0px;
@@ -108,7 +108,7 @@ header {
 	height: 100px;
 }
 
-#navMenu {
+.nav__Menu {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -127,7 +127,7 @@ header {
 
 /* CONFIGURACION del FRONT PAGE SECTION */
 /* ------------------------------------------- */
-#frontPage {
+.section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -139,21 +139,21 @@ header {
 	height: 60%;
 }
 
-#frontPage > div, #frontPage > div > a , #frontPageFigure{
+.section__FrontPage, .frontPage__A , .frontPage__Figure{
 	width: 100%;
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
 }
 
-#frontPageImg {
+.frontPage__Img {
 	width: 100%;
 	height: 100%;
 }
 
 /* CONFIGURACION de los SECTIONS INFERIORES */
 /* ------------------------------------------- */
-#downSections {
+.div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -164,17 +164,17 @@ header {
 	height: 350px;
 }
 
-.sectionLinks, .sectionLinks > div {
+.div__section, .div__Content {
 	width: 100%;
 	height: 100%;
 }
 
-.sectionDivImg {
+.div__Picture {
 	width: 100%;
 	height: 75%;
 }
 
-.sectionDivImg > a, .sectionsFigure {
+.picture__A, .picture__Figure {
 	display: flex;
 	justify-content: center;
 
@@ -183,12 +183,12 @@ header {
 	margin: 0px;
 }
 
-.sectionsImg {
+.picture__Img {
 	width: 90%;
 	height: 100%;
 }
 
-.sectionDivP {
+.div__Text {
 	display: flex;
 	justify-content: center;
 
@@ -196,7 +196,7 @@ header {
 	margin-top: 40px;
 }
 
-.sectionDivP > p {
+.div__Text > p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -222,7 +222,7 @@ footer {
 	height: 300px;
 }
 
-#footerOptions {
+.footer__Div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -232,7 +232,7 @@ footer {
 	height: 100%;
 }
 
-#socialNetworks {
+.footer__SocialMedia {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -241,11 +241,11 @@ footer {
 	height: 30px;
 }
 
-#socialNetworks > span {
+.footer__SocialMedia > span {
 	font-size: 23px;
 }
 
-#footerLinks {
+.footer__Links {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -261,28 +261,28 @@ footer {
 	margin-top: 50px;
 }
 
-.footerOptionsLinks {
+.links__Li {
 	border-right: 2px solid rgb(200, 200, 200);
 	
 	padding: 10px;
 }
 
-.footerOptionsLinks:last-child {
+.links__Li:last-child {
 	border: none;
 }
 
-.footerOptionsLinks > a {
+.links__A {
 	color: grey;
 	text-decoration: none ;
 	border-bottom: 2px solid rgb(200, 200, 200);
 }
 
-#copyright {
+.footer__copyright {
 	font-size: 19px;
 	letter-spacing: 3px;
 }
 
-.copyright > p {
+.copyright__P {
 	color: grey;
 }
 
